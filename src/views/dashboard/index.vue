@@ -12,6 +12,9 @@ import Sale from './Sale'
 import Observe from './Observe'
 export default {
   name:'',
+  mounted() {
+    this.$store.dispatch('getData')
+  },
   components:{
     Card,
     Sale,
